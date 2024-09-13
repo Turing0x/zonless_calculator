@@ -22,7 +22,14 @@
     "lib": [
       "ES2022",
       "dom"
-    ]
+    ],
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/app/*"],
+      "@calComponents/*": ["src/app/calculator/components/*"],
+      "@calViews/*": ["src/app/calculator/views/*"],
+      "@calServices/*": ["src/app/calculator/services/*"],
+    }
   },
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,
